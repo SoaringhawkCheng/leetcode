@@ -10,46 +10,32 @@
 #include <vector>
 using namespace std;
 
-class Solution {//这种方法是错的，只能用在单个重复，不能用在允许两个重复的问题
+class Solution1 {
 public:
     int removeDuplicates(vector<int>& nums) {
-        int size=nums.size();
-        int dup=0;
-        for(int i=2;i<size;++i){
-            if(nums[i]==nums[i-1]&&nums[i]==nums[i-2]) ++dup;
-            else nums[i-dup]=nums[i];
-            for(auto num:nums) cout<<num<<" ";
-            cout<<endl;
+        if(nums.size()<=2) return nums.size();
+        int index=2;
+        for(int i=2;i<nums.size();++i){
+            if(nums[i]]==nums[index-1]&&nums[i]==nums[index-2])//没有扩展性，允许三个重复值就无法改写
+                continue;
+            nums[index++]=nums[i];
         }
-        nums.resize(size-dup);
-        return size-dup;
+        return index;
+    }
+}
+
+class Solution2 {
+public:
+    int removeDuplicates(vector<int>& nums){
+        if(nums.size()<=2) return nums.size();
+        int index=2;
+        for(int i=2;i<nums.size();++i){
+            if(nums[i]!=nums[index-2])
+                nums[index++]=nums[i];
+        }
+        return index;
     }
 };
-
-//class Solution1 {
-//public:
-//    int removeDuplicates(vector<int>& nums) {
-//        if(nums.size()<2) return nums.size();
-//        int newsize=2;
-//        for(int i=2;i<nums.size();++i){
-//            if(nums[i]!=nums[i-2])
-//                nums[newsize++]=nums[i];
-//        }
-//        return newsize;
-//    }
-//};
-//class Solution3 {
-//public:
-//    int removeDuplicates(vector<int>& nums) {
-//        
-//    }
-//};
-//class Solution4 {
-//public:
-//    int removeDuplicates(vector<int>& nums) {
-//        
-//    }
-//};
 
 int main(int argc,const char *argv[]){
     vector<int> nums={1,1,1,2,2,3};
