@@ -38,8 +38,8 @@ private:
 };
 
 int main(int argc,const char *argv[]){
-    vector<int> nums1={1,2};
-    vector<int> nums2={3,4};
+    vector<int> nums1={2};
+    vector<int> nums2;
     Solution s;
     cout<<s.findMedianSortedArrays(nums1, nums2)<<endl;
 }

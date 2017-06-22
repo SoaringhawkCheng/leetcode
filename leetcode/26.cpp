@@ -56,3 +56,47 @@ public:
         return nums.size()-count;
     }
 };
+
+class Solution5 {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        if(nums.empty()) return 0;
+        int i,index;
+        for(i=1,index=1;i<nums.size();++i){
+            if(nums[i]!=nums[i-1])
+                nums[index++]=nums[i];
+            
+        }
+        return index;
+    }
+};
+
+class Solution6 {
+    typedef vector<int>::iterator Iter;
+public:
+    int removeDuplicates(vector<int>& nums) {
+        Iter unique_end=removeDuplicate(nums.begin(),nums.end());
+        return distance(nums.begin(),unique_end);
+    }
+private:
+    Iter removeDuplicate(Iter begin,Iter end){
+        Iter input=begin;
+        while(begin!=end){
+            *input++=*begin;
+            begin=upper_bound(begin,end,*begin);
+        }
+        return input;
+    }
+};
+
+int main(int argc,const char *argv[]){
+    vector<int> nums={1,1,1,2,2,3,4,5,5,6,6,7};
+    vector<int> nums2={1,2};
+    Solution5 s;
+    int size=s.removeDuplicates(nums2);
+    cout<<size<<endl;
+    for(int i=0;i<size;++i)
+        cout<<nums2[i]<<" ";
+    cout<<endl;
+    return 0;
+}
