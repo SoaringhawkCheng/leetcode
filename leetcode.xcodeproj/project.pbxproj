@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9237F5A81F224BC200C452ED /* 83.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9237F5A71F224BC200C452ED /* 83.cpp */; };
 		92503DD21EEA3D6C0039C111 /* 145.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92503DD11EEA3D6C0039C111 /* 145.cpp */; };
 		92503DDA1EEA7F660039C111 /* 103.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92503DD91EEA7F660039C111 /* 103.cpp */; };
 		92503DDE1EEA88D00039C111 /* 105.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92503DDD1EEA88D00039C111 /* 105.cpp */; };
 		92503DE01EEA88D90039C111 /* 106.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92503DDF1EEA88D90039C111 /* 106.cpp */; };
 		9255AC761EF244FD00A5FF8B /* 18.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9255AC751EF244FD00A5FF8B /* 18.cpp */; };
+		92889FA61EFBB8750007767E /* 120.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92889FA51EFBB8750007767E /* 120.cpp */; };
+		92C6E6C71F20402F00C9C429 /* 188.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92C6E6C61F20402F00C9C429 /* 188.cpp */; };
+		92EC2E651F1F6421000C740C /* 85.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92EC2E641F1F6421000C740C /* 85.cpp */; };
 		92F948EB1EF033D6005148AC /* 27.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92F948EA1EF033D6005148AC /* 27.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,11 +33,15 @@
 
 /* Begin PBXFileReference section */
 		923011B41EB9D56F002A99D3 /* leetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetcode; sourceTree = BUILT_PRODUCTS_DIR; };
+		9237F5A71F224BC200C452ED /* 83.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 83.cpp; sourceTree = "<group>"; };
 		92503DD11EEA3D6C0039C111 /* 145.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 145.cpp; sourceTree = "<group>"; };
 		92503DD91EEA7F660039C111 /* 103.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 103.cpp; sourceTree = "<group>"; };
 		92503DDD1EEA88D00039C111 /* 105.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 105.cpp; sourceTree = "<group>"; };
 		92503DDF1EEA88D90039C111 /* 106.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 106.cpp; sourceTree = "<group>"; };
 		9255AC751EF244FD00A5FF8B /* 18.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 18.cpp; sourceTree = "<group>"; };
+		92889FA51EFBB8750007767E /* 120.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 120.cpp; sourceTree = "<group>"; };
+		92C6E6C61F20402F00C9C429 /* 188.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 188.cpp; sourceTree = "<group>"; };
+		92EC2E641F1F6421000C740C /* 85.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 85.cpp; sourceTree = "<group>"; };
 		92F948EA1EF033D6005148AC /* 27.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 27.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +81,10 @@
 				92503DD91EEA7F660039C111 /* 103.cpp */,
 				92503DDD1EEA88D00039C111 /* 105.cpp */,
 				92503DDF1EEA88D90039C111 /* 106.cpp */,
+				92889FA51EFBB8750007767E /* 120.cpp */,
+				92EC2E641F1F6421000C740C /* 85.cpp */,
+				92C6E6C61F20402F00C9C429 /* 188.cpp */,
+				9237F5A71F224BC200C452ED /* 83.cpp */,
 			);
 			path = leetcode;
 			sourceTree = "<group>";
@@ -135,9 +147,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9237F5A81F224BC200C452ED /* 83.cpp in Sources */,
+				92C6E6C71F20402F00C9C429 /* 188.cpp in Sources */,
 				9255AC761EF244FD00A5FF8B /* 18.cpp in Sources */,
 				92503DDA1EEA7F660039C111 /* 103.cpp in Sources */,
 				92F948EB1EF033D6005148AC /* 27.cpp in Sources */,
+				92889FA61EFBB8750007767E /* 120.cpp in Sources */,
+				92EC2E651F1F6421000C740C /* 85.cpp in Sources */,
 				92503DD21EEA3D6C0039C111 /* 145.cpp in Sources */,
 				92503DDE1EEA88D00039C111 /* 105.cpp in Sources */,
 				92503DE01EEA88D90039C111 /* 106.cpp in Sources */,
