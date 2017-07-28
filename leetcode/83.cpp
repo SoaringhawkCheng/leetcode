@@ -18,6 +18,16 @@ struct ListNode {
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
-        
+        ListNode *pos=head;
+        while(pos&&pos->next){
+            if(pos->val==pos->next->val){
+                ListNode *next=pos->next;
+                pos->next=pos->next->next;
+                delete next;
+            }
+            else
+                pos=pos->next;
+        }
+        return head;
     }
 };

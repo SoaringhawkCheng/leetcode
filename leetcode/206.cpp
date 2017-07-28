@@ -19,11 +19,13 @@ class Solution1 {
 public:
     ListNode* reverseList(ListNode* head) {
         ListNode dummy(-1);
-        while(head){
-            ListNode *tmp=head;
-            head=head->next;
-            tmp->next=dummy.next;
-            dummy.next=tmp;
+        dummy.next=head;
+        ListNode *curr=head;
+        while(curr){
+            ListNode *temp=curr;
+            curr=curr->next;
+            temp->next=dummy.next;
+            dummy.next=temp;
         }
         return dummy.next;
     }
@@ -33,12 +35,12 @@ class Solution2 {
 public:
     ListNode* reverseList(ListNode* head) {
         ListNode *prev=NULL;
-        ListNode *cur=head;
-        while(cur){
-            ListNode *tmp=cur;
-            cur=cur->next;
-            tmp->next=prev;
-            prev=tmp;
+        ListNode *curr=head;
+        while(curr){
+            ListNode *temp=curr->next;
+            curr->next=prev;
+            prev=curr;
+            curr=temp;
         }
         return prev;
     }
