@@ -20,7 +20,7 @@ public:
         for(int i=1;i<=len;++i){
             if(s[i]==')'){
                 if(s[i-1]=='(') dp[i]=(i>=2?dp[i-2]+2:2);
-                else if(s[i-1-dp[i-1]]=='('&&i-1-dp[i-1]>=0)
+                else if(i-1-dp[i-1]>=0&&s[i-1-dp[i-1]]=='(')
                     dp[i]=dp[i-1]+2+(i-2-dp[i-1]>=0?dp[i-2-dp[i-1]]:0);
                 maxlen=max(maxlen,dp[i]);
             }
@@ -54,18 +54,20 @@ public:
     int longestValidParentheses(string s) {
         int size=s.size();
         int left=0,right=0,maxlen=0;
+        //如果s中右括号比左括号多，第一趟扫描能找出最长回文段
         for(int i=0;i<size;++i){
             if(s[i]=='(') ++left;
             else ++right;
             if(left==right) maxlen=max(maxlen,2*right);
-            else if(right>=left) left=right=0;
+            else if(right>left) left=right=0;
         }
         left=right=0;
+        //如果s中左括号比右括号多，第二趟扫描能找出最长回文段
         for(int i=size-1;i>=0;--i){
             if(s[i]==')') ++right;
             else ++left;
             if(left==right) maxlen=max(maxlen,2*left);
-            else if(left>=right) left=right=0;
+            else if(left>right) left=right=0;
         }
         return maxlen;
     }

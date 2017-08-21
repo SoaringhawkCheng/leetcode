@@ -13,23 +13,24 @@ using namespace std;
 class Solution {
 public:
     bool isValid(string s) {
+        stack<char> stk;
         string left="([{";
         string right=")]}";
-        stack<char> mstack;
-        for(auto ch:s){
-            if(left.find(ch)!=string::npos)
-                mstack.push(ch);
+        for(int i=0;i<s.size();++i){
+            int index;
+            if((index=left.find(s[i]))!=string::npos) stk.push(s[i]);
             else{
-                if(mstack.empty()||mstack.top()!=left[right.find(ch)])
-                    return false;
-                else
-                    mstack.pop();
+                index=right.find(s[i]);
+                if(!stk.empty()&&stk.top()==left[index]) stk.pop();
+                else return false;
             }
         }
-        return mstack.empty();
+        return stk.empty();
     }
 };
 
 int main(int argc,const char *argv[]){
+    Solution s;
+    cout<<(s.isValid("()")?"true":"false")<<endl;
     return 0;
 }
