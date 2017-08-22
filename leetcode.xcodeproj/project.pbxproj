@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		921C43881F4B28B5009EF5A0 /* 84.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 921C43871F4B28B5009EF5A0 /* 84.cpp */; };
+		921C438A1F4B2B29009EF5A0 /* shared_ptr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 921C43891F4B2B29009EF5A0 /* shared_ptr.cpp */; };
 		9255AC761EF244FD00A5FF8B /* 18.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9255AC751EF244FD00A5FF8B /* 18.cpp */; };
 		92CDD76D1F2C55540051D15B /* 65.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92CDD76C1F2C55540051D15B /* 65.cpp */; };
 		92EC2E651F1F6421000C740C /* 85.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92EC2E641F1F6421000C740C /* 85.cpp */; };
@@ -26,7 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		921C43871F4B28B5009EF5A0 /* 84.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 84.cpp; sourceTree = "<group>"; };
+		921C43891F4B2B29009EF5A0 /* shared_ptr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shared_ptr.cpp; sourceTree = "<group>"; };
 		923011B41EB9D56F002A99D3 /* leetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		9255AC751EF244FD00A5FF8B /* 18.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 18.cpp; sourceTree = "<group>"; };
 		92CDD76C1F2C55540051D15B /* 65.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 65.cpp; sourceTree = "<group>"; };
@@ -63,10 +63,10 @@
 		923011B61EB9D56F002A99D3 /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
-				921C43871F4B28B5009EF5A0 /* 84.cpp */,
 				9255AC751EF244FD00A5FF8B /* 18.cpp */,
 				92EC2E641F1F6421000C740C /* 85.cpp */,
 				92CDD76C1F2C55540051D15B /* 65.cpp */,
+				921C43891F4B2B29009EF5A0 /* shared_ptr.cpp */,
 			);
 			path = leetcode;
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9255AC761EF244FD00A5FF8B /* 18.cpp in Sources */,
+				921C438A1F4B2B29009EF5A0 /* shared_ptr.cpp in Sources */,
 				92EC2E651F1F6421000C740C /* 85.cpp in Sources */,
 				92CDD76D1F2C55540051D15B /* 65.cpp in Sources */,
-				921C43881F4B28B5009EF5A0 /* 84.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
